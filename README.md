@@ -17,3 +17,15 @@ The model is made publicly available on a non-commercial basis. Copyright of the
 ## Usage: Trainig
 
 * Run training MLP or CNN script 
+
+## Citation
+'''
+@inproceedings{ahmed2021neuroscrub,
+  title={NeuroScrub: Mitigating Retention Failures Using Approximate Scrubbing in Neuromorphic Fabric Based on Resistive Memories},
+  author={Ahmed, Soyed Tuhin and Hefenbrock, Michael and M{\"u}nch, Christopher and Tahoori, Mehdi B},
+  booktitle={2021 IEEE European Test Symposium (ETS)},
+  pages={1--6},
+  year={2021},
+  organization={IEEE}
+}
+'''
