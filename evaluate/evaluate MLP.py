@@ -5,7 +5,7 @@ import torch
 import torchvision as tv
 import numpy as np
 import os
-from model import *
+from bin_model import *
 from retention_faults_sim import *
 import argparse
 from torchvision.datasets import ImageFolder
@@ -241,11 +241,6 @@ if __name__ == '__main__':
 
     print(args)
 
-    """ select seed to reproduce results"""
-    seed = 120
-    torch.manual_seed(seed=args.seed)
-    np.random.seed(seed=args.seed)
-
     """
     Define default input channel and number of classes
     """
@@ -268,15 +263,16 @@ if __name__ == '__main__':
     select model
     """
     if str(args.NN_type).casefold() == 'mlp':
-        model = MLP(c_in, num_classes)
-        if args.cuda:
-            torch.cuda.manual_seed(args.seed)
-            model.cuda()
+        model = BinMLP(c_in, num_classes)
     elif str(args.NN_type) == 'cnn':
-        model = LeNet(c_in, num_classes)
-        if args.cuda:
-            torch.cuda.manual_seed(args.seed)
-            model.cuda()
+        model = BinLeNet(c_in, num_classes)
+
+    """ select seed to reproduce results"""
+    torch.manual_seed(seed=args.seed)
+    np.random.seed(seed=args.seed)
+    if args.cuda:
+        torch.cuda.manual_seed(args.seed)
+        model.cuda()
 
     criterion = nn.CrossEntropyLoss()
 
