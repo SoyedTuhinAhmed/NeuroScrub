@@ -21,7 +21,7 @@ The model is made publicly available on a non-commercial basis. Copyright of the
 ## Citation
 If you use NeuroScrub in a scientific publication, we would appreciate references to the following paper:
 
-**NeuroScrub: Mitigating Retention Failures Using Approximate Scrubbing in Neuromorphic Fabric Based on Resistive Memories**
+**NeuroScrub: Mitigating Retention Failures Using Approximate Scrubbing in Neuromorphic Fabric Based on Resistive Memories, ETS 2021**
 
 Biblatex entry:
 ``` @inproceedings{ahmed2021neuroscrub,
