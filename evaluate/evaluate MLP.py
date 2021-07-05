@@ -124,7 +124,7 @@ def show_coverage_all_hidden(model, scrubbed):
           ' SAC_ : ', SAC_(weight=model.classifier[12].weight, d=args.d))
 
 
-def evaluate_ret_fault_one_layer(model):
+def evaluate_ret_fault(model):
     checkpoint = torch.load(args.pretrained_path)
     model.load_state_dict(checkpoint['model_state_dict'])
     print('Best acc ', checkpoint['test_accuracy'])
