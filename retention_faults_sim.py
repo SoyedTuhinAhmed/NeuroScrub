@@ -1,7 +1,9 @@
+"""
+Author: Soyed Tuhin Ahmed
+"""
+
 import torch
 import torch.nn as nn
-import math
-import torch.nn.init as init
 
 
 class RetentionFault():

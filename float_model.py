@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
 
-
+"""
+Author: Soyed Tuhin Ahmed
+"""
 class FloatLeNet(nn.Module):
     def __init__(self, c_in=1, num_classes=10):
         super(FloatLeNet, self).__init__()

@@ -1,13 +1,11 @@
+"""
+BNN functions from paper "Binarized Neural Networks: Training Deep Neural Networks with Weights and Activations Constrained to +1 or -1,
+Matthieu Courbariaux, et. al."
+"""
+
 import torch
-import pdb
 import torch.nn as nn
-import math
-from torch.autograd import Variable
 from torch.autograd import Function
-
-import numpy as np
-
-'Binarized'
 
 
 def Binarize(tensor, quant_mode='det'):
@@ -15,11 +13,6 @@ def Binarize(tensor, quant_mode='det'):
         return tensor.sign().mul(2).add(1).sign()
     else:
         return tensor.add_(1).div_(2).add_(torch.rand(tensor.size()).add(-0.5)).clamp_(0, 1).round().mul_(2).add_(-1)
-
-
-def BinarizeInpZero(tensor):
-    return (tensor > 0).type(torch.FloatTensor).cuda()
-
 
 class HingeLoss(nn.Module):
     def __init__(self):

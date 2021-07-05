@@ -1,3 +1,7 @@
+"""
+Author: Soyed Tuhin Ahmed
+"""
+
 from binarized_modules import BinarizeLinear, BinarizeConv2d
 import torch
 import torch.nn as nn
@@ -97,11 +101,4 @@ class BinMLP(nn.Module):
 
         return x
 
-
-class CustSigmoid(nn.Module):
-    def __init__(self):
-        super(CustSigmoid, self).__init__()
-
-    def forward(self, input: torch.Tensor) -> torch.Tensor:
-        return nn.Sigmoid(input)-0.5
 
