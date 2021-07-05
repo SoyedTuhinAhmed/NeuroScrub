@@ -114,13 +114,13 @@ def show_coverage_one_layer(model, scrubbed):
 def show_coverage_all_hidden(model, scrubbed):
     if scrubbed:
         print('Scrubbed coverage:- ')
-    print('layer ', 3, '  SAC: ', SAC(weight=model.classifier[3].weight, d=args.d),
+    print('layer ', 1, '  SAC: ', SAC(weight=model.classifier[3].weight, d=args.d),
           ' SAC_ : ', SAC_(weight=model.classifier[3].weight, d=args.d))
-    print('layer ', 6, ' SAC: ', SAC(weight=model.classifier[6].weight, d=args.d),
+    print('layer ', 2, ' SAC: ', SAC(weight=model.classifier[6].weight, d=args.d),
           ' SAC_ : ', SAC_(weight=model.classifier[6].weight, d=args.d))
-    print('layer ', 9, ' SAC: ', SAC(weight=model.classifier[9].weight, d=args.d),
+    print('layer ', 3, ' SAC: ', SAC(weight=model.classifier[9].weight, d=args.d),
           ' SAC_ : ', SAC_(weight=model.classifier[9].weight, d=args.d))
-    print('layer ', 12, ' SAC: ', SAC(weight=model.classifier[12].weight, d=args.d),
+    print('layer ', 4, ' SAC: ', SAC(weight=model.classifier[12].weight, d=args.d),
           ' SAC_ : ', SAC_(weight=model.classifier[12].weight, d=args.d))
 
 
