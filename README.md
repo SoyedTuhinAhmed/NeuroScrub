@@ -19,6 +19,11 @@ The model is made publicly available on a non-commercial basis. Copyright of the
 * Run training MLP or CNN script 
 
 ## Citation
+If you use NeuroScrub in a scientific publication, we would appreciate references to the following paper:
+
+**NeuroScrub: Mitigating Retention Failures Using Approximate Scrubbing in Neuromorphic Fabric Based on Resistive Memories**
+
+Biblatex entry:
 ``` @inproceedings{ahmed2021neuroscrub,
   title={NeuroScrub: Mitigating Retention Failures Using Approximate Scrubbing in Neuromorphic Fabric Based on Resistive Memories},
   author={Ahmed, Soyed Tuhin and Hefenbrock, Michael and M{\"u}nch, Christopher and Tahoori, Mehdi B},
@@ -26,5 +31,6 @@ The model is made publicly available on a non-commercial basis. Copyright of the
   pages={1--6},
   year={2021},
   organization={IEEE}
-}```
+}
+```
 
