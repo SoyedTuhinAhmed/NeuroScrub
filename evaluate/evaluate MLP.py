@@ -1,5 +1,6 @@
 """
 Author: Soyed Tuhin Ahmed
+CDNC
 """
 import torch
 import torchvision as tv
