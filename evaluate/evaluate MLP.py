@@ -276,4 +276,4 @@ if __name__ == '__main__':
 
     criterion = nn.CrossEntropyLoss()
 
-    evaluate_ret_fault_one_layer(model)
+    evaluate_ret_fault(model)
